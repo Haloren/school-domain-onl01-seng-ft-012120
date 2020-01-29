@@ -14,9 +14,11 @@ class School
     @grade = grade
     if @roster.include?(grade) == false 
       @roster[grade] = []
-    end   
+    end 
     @roster[grade] << student
   end 
+    # roster[grade] ||= []
+    # roster[grade] << student 
   
   #method grade retreives student from a grade
   def grade(num)
